@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtuqbrulfuv2l"]
+
+[ext_resource type="Texture2D" uid="uid://c2ajoocoe8pn1" path="res://icon.svg" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(550, 232)
+script = ExtResource("1_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(-12, 4)
+scale = Vector2(0.5078125, 0.546875)
+texture = ExtResource("1_0xm2m")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 761.0
+offset_top = 258.0
+offset_right = 801.0
+offset_bottom = 298.0
+
+[node name="Not_Green" type="Label" parent="Control"]
+visible = false
+layout_mode = 0
+offset_left = -731.0
+offset_top = -238.0
+offset_right = -424.0
+offset_bottom = -189.0
+text = "The color isn't green"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = -17.0
+offset_right = 120.0
+offset_bottom = 119.0
+scale = Vector2(0.5, 0.5)
+icon = ExtResource("1_0xm2m")
+script = ExtResource("4_lquwl")
+
+[node name="Hand" type="Node2D" parent="."]
+position = Vector2(191, 275)
+
+[node name="Sprite2D" type="Sprite2D" parent="Hand"]
+position = Vector2(16, 3)
+texture = ExtResource("1_0xm2m")
