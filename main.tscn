@@ -1,10 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=5 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://c2ajoocoe8pn1" path="res://icon.svg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cn8x0a8bx0u4s" path="res://red_carpet.png" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -2
+offset_right = 1155.0
+offset_bottom = 646.0
+texture = ExtResource("4_1bvp3")
 
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(550, 232)
