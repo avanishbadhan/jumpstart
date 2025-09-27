@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s3rry5fmsgqw"
-valid=false
+uid="uid://cn8x0a8bx0u4s"
+path="res://.godot/imported/red_carpet.png-32f9105ee3cdf530737c9d8d68f32249.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://red_carpet.jpg"
+source_file="res://red_carpet.png"
+dest_files=["res://.godot/imported/red_carpet.png-32f9105ee3cdf530737c9d8d68f32249.ctex"]
 
 [params]
 
