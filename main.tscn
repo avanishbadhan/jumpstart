@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=6 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://c2ajoocoe8pn1" path="res://icon.svg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
-[ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://cn8x0a8bx0u4s" path="res://red_carpet.png" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
+[ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -58,5 +58,5 @@ position = Vector2(16, 3)
 texture = ExtResource("1_0xm2m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_1bvp3")
+stream = ExtResource("5_lquwl")
 autoplay = true
