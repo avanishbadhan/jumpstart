@@ -53,11 +53,14 @@ func _button_pressed():
 			5: popup_label.text = "Nothing left to give. And still, you guessed wrong."
 			6: popup_label.text = "You were never meant to win."
 			7: popup_label.text = "Did you think this was fair?"
+		var timer2 = get_tree().create_timer(1.0)
+		await timer2.timeout
+		get_tree().change_scene_to_file("res://gameover.tscn")
+
 	popup_label.visible = true
 	
 	print(hand.texture)
 	
-	var timer = get_tree().create_timer(3.0)
-	await timer.timeout
+	#var timer = get_tree().create_timer(3.0)
+	#await timer.timeout
 	popup_label.visible = false
-	get_tree().change_scene_to_file("res://gameover.tscn")
