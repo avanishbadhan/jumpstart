@@ -10,6 +10,7 @@ func _ready() -> void:
 	self.pressed.connect(_button_pressed)
 
 func _button_pressed() -> void:
+	guess.modulate = Color(0, 0, 0)
 	if sprite.texture == blue_texture:
 		guess.text = "Correct!"
 	else:
@@ -19,3 +20,10 @@ func _button_pressed() -> void:
 	var timer = get_tree().create_timer(3.0)
 	await timer.timeout
 	guess.visible = false
+	disabled = true
+	$"../yellow_select".disabled = true
+	$"../red_select".disabled = true
+	$"../green_select".disabled = true
+	
+	var tween = create_tween()
+	tween.tween_property(cloth, "modulate:a", 0.0, 2.0)
