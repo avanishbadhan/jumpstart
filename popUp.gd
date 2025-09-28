@@ -10,6 +10,7 @@ func _ready():
 	pressed.connect(_button_pressed)
 
 func _button_pressed():
+	popup_label.modulate = Color(0, 0, 0)
 	slice.play()
 	cutting.play()
 	var random = randi() % 4

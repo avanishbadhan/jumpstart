@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=9 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://c2ajoocoe8pn1" path="res://icon.svg" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://ciop53dgajnwt" path="res://Screenshot 2025-09-27 192503.png" id="1_272bh"]
+[ext_resource type="Texture2D" uid="uid://dhx3283muypvp" path="res://new_bg.png" id="1_5vw27"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
 [ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://cd81e71mo8b3y" path="res://knife-slice-41231.mp3" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://b7igt7xu1gu24" path="res://Hand-removebg-preview.png" id="7_5vw27"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,16 +15,11 @@
 z_index = -2
 offset_right = 1155.0
 offset_bottom = 646.0
-texture = ExtResource("1_272bh")
+texture = ExtResource("1_5vw27")
 
 [node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(550, 232)
+position = Vector2(589, 234)
 script = ExtResource("1_h2yge")
-
-[node name="Sprite2D" type="Sprite2D" parent="player"]
-position = Vector2(-12, 4)
-scale = Vector2(0.5078125, 0.546875)
-texture = ExtResource("1_0xm2m")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -36,18 +32,21 @@ offset_bottom = 298.0
 [node name="Not_Green" type="Label" parent="Control"]
 visible = false
 layout_mode = 0
-offset_left = -731.0
-offset_top = -238.0
-offset_right = -424.0
-offset_bottom = -189.0
+offset_left = -283.0
+offset_top = 29.0
+offset_right = 24.0
+offset_bottom = 78.0
 text = "The color isn't green"
 
 [node name="machete" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = -16.0
-offset_top = -17.0
-offset_right = 120.0
-offset_bottom = 119.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0500001
+anchor_top = 3.325
+anchor_right = 1.0500001
+anchor_bottom = 3.325
+offset_right = 136.0
+offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 icon = ExtResource("1_0xm2m")
 script = ExtResource("4_lquwl")
@@ -62,8 +61,9 @@ stream = ExtResource("6_272bh")
 position = Vector2(191, 275)
 
 [node name="Sprite2D" type="Sprite2D" parent="Hand"]
-position = Vector2(16, 3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(88.12501, 203.03128)
+scale = Vector2(0.42004502, 0.45850003)
+texture = ExtResource("7_5vw27")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lquwl")
