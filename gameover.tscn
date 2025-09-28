@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmv6q4bp1knfe"]
+[gd_scene load_steps=5 format=3 uid="uid://bmv6q4bp1knfe"]
 
 [ext_resource type="Script" uid="uid://c7hyfbkpcm4gt" path="res://gameover.gd" id="1_4nh4k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tpdqf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4nh4k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eeur3"]
 
 [node name="gameover" type="CanvasLayer"]
 script = ExtResource("1_4nh4k")
@@ -18,6 +24,12 @@ offset_right = 44.0
 offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_tpdqf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tpdqf")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_tpdqf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tpdqf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tpdqf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tpdqf")
 text = "Play Again"
 
 [node name="quit" type="Button" parent="."]
@@ -32,7 +44,34 @@ offset_right = 21.0
 offset_bottom = 50.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4nh4k")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4nh4k")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4nh4k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4nh4k")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4nh4k")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4nh4k")
 text = "Quit"
+
+[node name="instruct" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.0
+offset_top = -65.0
+offset_right = 120.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_eeur3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_eeur3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_eeur3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_eeur3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_eeur3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eeur3")
+text = "Every decision has a price… and you’ve paid yours. Will you dare to try again?"
+autowrap_mode = 3
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
