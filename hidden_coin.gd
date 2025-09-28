@@ -26,4 +26,4 @@ func pick_random_number():
 	numbers.remove_at(rand_index)
 
 	# since this script is ON a Sprite2D, just use `texture`
-	texture = textures[value]
+	set_texture(textures[value])

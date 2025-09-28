@@ -27,3 +27,4 @@ func _button_pressed() -> void:
 	
 	var tween = create_tween()
 	tween.tween_property(cloth, "modulate:a", 0.0, 2.0)
+	tween.tween_property(cloth, "modulate:a", 1.0, 2.0).set_delay(1.5)
