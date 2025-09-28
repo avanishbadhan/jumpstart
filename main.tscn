@@ -1,21 +1,15 @@
-[gd_scene load_steps=33 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=25 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://dp30djxoa5p4x" path="res://bg3am.png" id="1_getpj"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="FontFile" uid="uid://bmknn1doccn3k" path="res://Ricebox Allcaps.ttf" id="3_2cqfq"]
-[ext_resource type="Texture2D" uid="uid://crt1dvnupxyst" path="res://knife.png" id="3_kek77"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
 [ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://cd81e71mo8b3y" path="res://knife-slice-41231.mp3" id="6_272bh"]
 [ext_resource type="Texture2D" uid="uid://cryrgso6mue5l" path="res://Screenshot_2025-09-28_at_3.01.31_AM-removebg-preview.png" id="8_getpj"]
-[ext_resource type="Texture2D" uid="uid://b5ston4d5pvj1" path="res://sackofcoins.png" id="9_4c57u"]
-[ext_resource type="Texture2D" uid="uid://csn6t0prko68i" path="res://red_coin_better.png" id="9_ycdy4"]
 [ext_resource type="FontFile" uid="uid://cjuerbegjkp61" path="res://ricebox_allcaps/Ricebox Allcaps.ttf" id="10_getpj"]
-[ext_resource type="Texture2D" uid="uid://cfuq3vsuum5rc" path="res://blue_coin_better.png" id="10_w48qg"]
 [ext_resource type="Script" uid="uid://cob4aae6gfgtq" path="res://red_select.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://gb41fsiyo6cb" path="res://green_coin_better.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://b5gxl68q5up6c" path="res://yellow_coin_better.png" id="12_2cqfq"]
 [ext_resource type="Script" uid="uid://dvfablkeqnyte" path="res://blue_select.gd" id="13_getpj"]
 [ext_resource type="Script" uid="uid://dceq2q76cdwwt" path="res://green_select.gd" id="15_ryguw"]
 [ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
@@ -27,26 +21,20 @@ base_font = ExtResource("3_2cqfq")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efxa6"]
 
-[sub_resource type="FontVariation" id="FontVariation_ryguw"]
-base_font = ExtResource("10_getpj")
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cqfq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yaehf"]
 
-[sub_resource type="FontVariation" id="FontVariation_d13ii"]
-base_font = ExtResource("10_getpj")
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_074og"]
-
-[sub_resource type="FontVariation" id="FontVariation_1u8w0"]
-base_font = ExtResource("10_getpj")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cegan"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg77c"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82xsv"]
+
+[sub_resource type="FontVariation" id="FontVariation_getpj"]
+base_font = ExtResource("10_getpj")
 
 [node name="Node2D" type="Node2D"]
 
@@ -77,7 +65,7 @@ offset_right = -44.0
 offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
 theme_override_fonts/font = SubResource("FontVariation_cegan")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -104,7 +92,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_efxa6"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_efxa6")
-icon = ExtResource("3_kek77")
 script = ExtResource("4_lquwl")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control/machete"]
@@ -131,7 +118,6 @@ offset_top = 422.0
 offset_right = 772.0
 offset_bottom = 605.0
 scale = Vector2(0.45, 0.45)
-theme_override_fonts/font = SubResource("FontVariation_ryguw")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2cqfq")
@@ -143,7 +129,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2cqfq"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2cqfq")
-icon = ExtResource("9_ycdy4")
 script = ExtResource("11_82xsv")
 
 [node name="blue_select" type="Button" parent="."]
@@ -152,7 +137,6 @@ offset_top = 424.00003
 offset_right = 923.0
 offset_bottom = 602.0
 scale = Vector2(0.45, 0.45)
-theme_override_fonts/font = ExtResource("10_getpj")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_yaehf")
@@ -164,7 +148,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yaehf"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yaehf")
-icon = ExtResource("10_w48qg")
 script = ExtResource("13_getpj")
 
 [node name="green_select" type="Button" parent="."]
@@ -173,7 +156,6 @@ offset_top = 426.0
 offset_right = 497.0
 offset_bottom = 609.0
 scale = Vector2(0.45, 0.45)
-theme_override_fonts/font = SubResource("FontVariation_d13ii")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_074og")
@@ -185,7 +167,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_074og"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_074og")
-icon = ExtResource("11_vivmo")
 script = ExtResource("15_ryguw")
 
 [node name="yellow_select" type="Button" parent="."]
@@ -194,7 +175,6 @@ offset_top = 423.0
 offset_right = 631.0
 offset_bottom = 616.0
 scale = Vector2(0.45, 0.45)
-theme_override_fonts/font = SubResource("FontVariation_1u8w0")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_cegan")
@@ -206,7 +186,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cegan"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_cegan")
-icon = ExtResource("12_2cqfq")
 script = ExtResource("17_d13ii")
 
 [node name="coinSack" type="Button" parent="."]
@@ -228,7 +207,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_dg77c"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dg77c")
-icon = ExtResource("9_4c57u")
 
 [node name="HiddenCoin" type="Sprite2D" parent="."]
 position = Vector2(119, 217)
@@ -247,3 +225,5 @@ offset_left = 503.0
 offset_top = 257.0
 offset_right = 594.0
 offset_bottom = 315.0
+theme_override_fonts/font = SubResource("FontVariation_getpj")
+theme_override_font_sizes/font_size = 30
