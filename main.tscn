@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=23 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://dp30djxoa5p4x" path="res://bg3am.png" id="1_getpj"]
 [ext_resource type="FontFile" uid="uid://bmknn1doccn3k" path="res://Ricebox Allcaps.ttf" id="3_2cqfq"]
@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://cjuerbegjkp61" path="res://ricebox_allcaps/Ricebox Allcaps.ttf" id="10_getpj"]
 [ext_resource type="Script" uid="uid://cob4aae6gfgtq" path="res://red_select.gd" id="11_82xsv"]
 [ext_resource type="Script" uid="uid://dvfablkeqnyte" path="res://blue_select.gd" id="13_getpj"]
+[ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="13_ycdy4"]
 [ext_resource type="Script" uid="uid://dceq2q76cdwwt" path="res://green_select.gd" id="15_ryguw"]
 [ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
 [ext_resource type="Script" uid="uid://guvljl36uocm" path="res://hidden_coin.gd" id="16_074og"]
@@ -40,7 +41,6 @@ z_index = -2
 offset_right = 1155.0
 offset_bottom = 646.0
 texture = ExtResource("1_getpj")
-expand_mode = 1
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -215,3 +215,7 @@ offset_right = 594.0
 offset_bottom = 315.0
 theme_override_fonts/font = SubResource("FontVariation_getpj")
 theme_override_font_sizes/font_size = 30
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_ycdy4")
+autoplay = true
