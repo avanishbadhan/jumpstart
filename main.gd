@@ -35,29 +35,13 @@ func _ready():
 	}
 
 	# Connect button signals
-	for button in button_colors.keys():
-		button.pressed.connect(_on_button_pressed.bind(button))
+	
 
 	start_new_round()
 
 
 # --- Called when a button is pressed ---
-func _on_button_pressed(pressed_button: Button):
-	_disable_all_buttons()
-	
-	if button_colors[pressed_button] == get_key_by_value(textures, hidden_coin):
-		popup_label.text = "Correct!"
-	else:
-		popup_label.text = "Incorrect..."
-	
-	# Fade out → black
-	await fade_to_black()
-	# Wait 1 second in black
-	await get_tree().create_timer(1.0).timeout
-	# Fade back in
-	await fade_from_black()
-	
-	start_new_round()
+
 
 
 # --- Start a new round ---
