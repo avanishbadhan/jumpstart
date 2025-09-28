@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=8 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://c2ajoocoe8pn1" path="res://icon.svg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ciop53dgajnwt" path="res://Screenshot 2025-09-27 192503.png" id="1_272bh"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://cn8x0a8bx0u4s" path="res://red_carpet.png" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
+[ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
 [ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
+[ext_resource type="AudioStream" uid="uid://cd81e71mo8b3y" path="res://knife-slice-41231.mp3" id="6_272bh"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,7 +14,7 @@
 z_index = -2
 offset_right = 1155.0
 offset_bottom = 646.0
-texture = ExtResource("4_1bvp3")
+texture = ExtResource("1_272bh")
 
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(550, 232)
@@ -40,7 +42,7 @@ offset_right = -424.0
 offset_bottom = -189.0
 text = "The color isn't green"
 
-[node name="Button" type="Button" parent="Control"]
+[node name="machete" type="Button" parent="Control"]
 layout_mode = 0
 offset_left = -16.0
 offset_top = -17.0
@@ -49,6 +51,12 @@ offset_bottom = 119.0
 scale = Vector2(0.5, 0.5)
 icon = ExtResource("1_0xm2m")
 script = ExtResource("4_lquwl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control/machete"]
+stream = ExtResource("5_7mycd")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Control/machete"]
+stream = ExtResource("6_272bh")
 
 [node name="Hand" type="Node2D" parent="."]
 position = Vector2(191, 275)

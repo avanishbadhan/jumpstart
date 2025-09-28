@@ -1,6 +1,8 @@
 extends Button
 
 @onready var popup_label = $"../Not_Green"
+@onready var cutting = $"../machete/AudioStreamPlayer"
+@onready var slice = $"../machete/AudioStreamPlayer2"
 var fingers := 5
 
 func _ready():
@@ -8,6 +10,8 @@ func _ready():
 	pressed.connect(_button_pressed)
 
 func _button_pressed():
+	slice.play()
+	cutting.play()
 	var random = randi() % 4
 	match random:
 		0: popup_label.text = "The color isn't green"
