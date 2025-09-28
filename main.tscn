@@ -1,10 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=22 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://dp30djxoa5p4x" path="res://bg3am.png" id="1_getpj"]
 [ext_resource type="FontFile" uid="uid://bmknn1doccn3k" path="res://Ricebox Allcaps.ttf" id="3_2cqfq"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
-[ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://cd81e71mo8b3y" path="res://knife-slice-41231.mp3" id="6_272bh"]
 [ext_resource type="FontFile" uid="uid://cjuerbegjkp61" path="res://ricebox_allcaps/Ricebox Allcaps.ttf" id="10_getpj"]
 [ext_resource type="Script" uid="uid://cob4aae6gfgtq" path="res://red_select.gd" id="11_82xsv"]
@@ -12,7 +11,6 @@
 [ext_resource type="Script" uid="uid://dceq2q76cdwwt" path="res://green_select.gd" id="15_ryguw"]
 [ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
 [ext_resource type="Script" uid="uid://guvljl36uocm" path="res://hidden_coin.gd" id="16_074og"]
-[ext_resource type="Script" uid="uid://bwqs3wttnaxo" path="res://start_button.gd" id="17_074og"]
 [ext_resource type="Script" uid="uid://5uy2mgiou4ud" path="res://yellow_select.gd" id="17_d13ii"]
 
 [sub_resource type="FontVariation" id="FontVariation_cegan"]
@@ -101,10 +99,6 @@ position = Vector2(191, 275)
 [node name="Sprite2D" type="Sprite2D" parent="Hand"]
 position = Vector2(35, 392)
 scale = Vector2(0.64627975, 0.6264554)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_lquwl")
-autoplay = true
 
 [node name="red_select" type="Button" parent="."]
 offset_left = 591.0
@@ -221,11 +215,3 @@ offset_right = 594.0
 offset_bottom = 315.0
 theme_override_fonts/font = SubResource("FontVariation_getpj")
 theme_override_font_sizes/font_size = 30
-
-[node name="StartButton" type="Button" parent="."]
-offset_left = 450.0
-offset_top = 468.0
-offset_right = 692.0
-offset_bottom = 548.0
-text = "START"
-script = ExtResource("17_074og")
