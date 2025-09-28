@@ -3,7 +3,13 @@ extends Button
 @onready var popup_label = $"../Not_Green"
 @onready var cutting = $"../machete/AudioStreamPlayer"
 @onready var slice = $"../machete/AudioStreamPlayer2"
+@onready var hiddenCoin = $"../../HiddenCoin"
 var fingers := 5
+
+var blue_tTure = preload("res://blue_coin_better.png")
+var red_tTure = preload("res://red_coin_better.png")
+var yellow_tTure = preload("res://yellow_coin_better.png")
+var green_tTure = preload("res://green_coin_better.png")
 
 func _ready():
 	# In Godot 4, you don’t need to connect like this if you connected via the editor.
@@ -13,14 +19,17 @@ func _button_pressed():
 	popup_label.modulate = Color(0, 0, 0)
 	slice.play()
 	cutting.play()
-	var random = randi() % 4
-	var randomb = randi() % 8
-	match random:
-		0: popup_label.text = "Green’s for life. You’re closer to death."
-		1: popup_label.text = "Drowning in doubt? It’s not blue."
-		2: popup_label.text = "Not red. But you’ll still bleed."
-		3: popup_label.text = "No sunlight here. It isn’t yellow."
-
+	if(hiddenCoin.texture != blue_tTure):
+		popup_label.text = "Drowning in doubt? It’s not blue."
+	elif(hiddenCoin.texture != red_tTure):
+		popup_label.text = "Not red. But you’ll still bleed."
+	elif(hiddenCoin.texture != green_tTure):
+		popup_label.text = "Green’s for life. You’re closer to death."
+	if(hiddenCoin.texture != blue_tTure):
+		popup_label.text = "No sunlight here. It isn’t yellow."
+	
+	var randomb = randi()%8
+	
 	fingers -= 1
 	if fingers < 1:
 		match randomb:
