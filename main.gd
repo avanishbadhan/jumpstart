@@ -8,6 +8,7 @@ extends Node2D
 @onready var fade_rect: ColorRect = $CanvasLayer/FadeRect
 @onready var popup_label: Label = $coin_guess
 
+@export var wrongCounter = 0
 # --- Textures for coins ---
 var textures = {
 	1: preload("res://blue_coin_better.png"),
@@ -98,3 +99,9 @@ func get_key_by_value(dict: Dictionary, val):
 		if dict[k] == val:
 			return k
 	return null
+
+func _process(delta: float) -> void:
+	if(wrongCounter > 3):
+		var timer2 = get_tree().create_timer(1.0)
+		await timer2.timeout
+		get_tree().change_scene_to_file("res://gameover.tscn")

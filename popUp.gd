@@ -18,7 +18,7 @@ func _ready():
 	
 
 func _button_pressed():
-	popup_label.modulate = Color(0, 0, 0)
+	#popup_label.modulate = Color(0, 0, 0)
 	slice.play()
 	cutting.play()
 	if(hiddenCoin.texture != blue_tTure):
@@ -56,11 +56,3 @@ func _button_pressed():
 		var timer2 = get_tree().create_timer(1.0)
 		await timer2.timeout
 		get_tree().change_scene_to_file("res://gameover.tscn")
-
-	popup_label.visible = true
-	
-	print(hand.texture)
-	
-	#var timer = get_tree().create_timer(3.0)
-	#await timer.timeout
-	popup_label.visible = false

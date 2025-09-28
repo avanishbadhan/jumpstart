@@ -53,6 +53,7 @@ offset_right = 801.0
 offset_bottom = 298.0
 
 [node name="Not_Green" type="Label" parent="Control"]
+visible = false
 layout_mode = 0
 offset_left = -363.0
 offset_top = -18.0
@@ -71,10 +72,10 @@ anchor_left = 1.0500001
 anchor_top = 3.325
 anchor_right = 1.0500001
 anchor_bottom = 3.325
-offset_left = 17.0
-offset_top = -49.0
-offset_right = 398.0
-offset_bottom = 337.0
+offset_left = 104.0
+offset_top = -39.0
+offset_right = 485.0
+offset_bottom = 347.0
 scale = Vector2(0.5, 0.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_efxa6")
@@ -103,10 +104,10 @@ position = Vector2(35, 392)
 scale = Vector2(0.64627975, 0.6264554)
 
 [node name="red_select" type="Button" parent="."]
-offset_left = 591.0
-offset_top = 422.0
-offset_right = 772.0
-offset_bottom = 605.0
+offset_left = 638.0
+offset_top = 467.0
+offset_right = 819.0
+offset_bottom = 650.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2cqfq")
@@ -122,10 +123,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_2cqfq")
 script = ExtResource("11_82xsv")
 
 [node name="blue_select" type="Button" parent="."]
-offset_left = 734.0
-offset_top = 424.00003
-offset_right = 923.0
-offset_bottom = 602.0
+offset_left = 801.0
+offset_top = 467.00003
+offset_right = 990.0
+offset_bottom = 645.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yaehf")
@@ -141,10 +142,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_yaehf")
 script = ExtResource("13_getpj")
 
 [node name="green_select" type="Button" parent="."]
-offset_left = 307.0
-offset_top = 426.0
-offset_right = 497.0
-offset_bottom = 609.0
+offset_left = 333.0
+offset_top = 447.0
+offset_right = 523.0
+offset_bottom = 630.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_074og")
@@ -160,10 +161,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_074og")
 script = ExtResource("15_ryguw")
 
 [node name="yellow_select" type="Button" parent="."]
-offset_left = 448.0
-offset_top = 423.0
-offset_right = 631.0
-offset_bottom = 616.0
+offset_left = 483.0
+offset_top = 447.00003
+offset_right = 666.0
+offset_bottom = 640.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cegan")

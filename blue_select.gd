@@ -14,10 +14,11 @@ func _button_pressed() -> void:
 	if sprite.texture == blue_texture:
 		guess.text = "Correct!"
 	else:
+		$"..".wrongCounter+=1
 		guess.text = "Incorrect..."
 	guess.visible = true
 
-	var timer = get_tree().create_timer(3.0)
+	var timer = get_tree().create_timer(0.5)
 	await timer.timeout
 	guess.visible = false
 	disabled = true
@@ -26,8 +27,8 @@ func _button_pressed() -> void:
 	$"../green_select".disabled = true
 	
 	var tween = create_tween()
-	tween.tween_property(cloth, "modulate:a", 0.0, 2.0)
-	tween.tween_property(cloth, "modulate:a", 1.0, 2.0).set_delay(1.5)
+	tween.tween_property(cloth, "modulate:a", 0.0, 1.0)
+	tween.tween_property(cloth, "modulate:a", 1.0, 1.0).set_delay(1.5)
 	sprite.pick_random_number()
 	disabled = false
 	$"../red_select".disabled = false
