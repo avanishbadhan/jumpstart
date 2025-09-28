@@ -1,20 +1,15 @@
-[gd_scene load_steps=29 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=25 format=3 uid="uid://dtuqbrulfuv2l"]
 
-[ext_resource type="Texture2D" uid="uid://dhx3283muypvp" path="res://new_bg.png" id="1_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dp30djxoa5p4x" path="res://bg3am.png" id="1_getpj"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="FontFile" uid="uid://bmknn1doccn3k" path="res://Ricebox Allcaps.ttf" id="3_2cqfq"]
-[ext_resource type="Texture2D" uid="uid://crt1dvnupxyst" path="res://knife.png" id="3_kek77"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
 [ext_resource type="AudioStream" uid="uid://vekqjcc1acls" path="res://music.mp3" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://cd81e71mo8b3y" path="res://knife-slice-41231.mp3" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://b7igt7xu1gu24" path="res://Hand-removebg-preview.png" id="7_5vw27"]
-[ext_resource type="Texture2D" uid="uid://b5ston4d5pvj1" path="res://sackofcoins.png" id="9_4c57u"]
-[ext_resource type="Texture2D" uid="uid://csn6t0prko68i" path="res://red_coin_better.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://cfuq3vsuum5rc" path="res://blue_coin_better.png" id="10_w48qg"]
+[ext_resource type="Texture2D" uid="uid://cryrgso6mue5l" path="res://Screenshot_2025-09-28_at_3.01.31_AM-removebg-preview.png" id="8_getpj"]
+[ext_resource type="FontFile" uid="uid://cjuerbegjkp61" path="res://ricebox_allcaps/Ricebox Allcaps.ttf" id="10_getpj"]
 [ext_resource type="Script" uid="uid://cob4aae6gfgtq" path="res://red_select.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://gb41fsiyo6cb" path="res://green_coin_better.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://b5gxl68q5up6c" path="res://yellow_coin_better.png" id="12_2cqfq"]
 [ext_resource type="Script" uid="uid://dvfablkeqnyte" path="res://blue_select.gd" id="13_getpj"]
 [ext_resource type="Script" uid="uid://dceq2q76cdwwt" path="res://green_select.gd" id="15_ryguw"]
 [ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
@@ -38,13 +33,17 @@ base_font = ExtResource("3_2cqfq")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82xsv"]
 
+[sub_resource type="FontVariation" id="FontVariation_getpj"]
+base_font = ExtResource("10_getpj")
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -2
 offset_right = 1155.0
 offset_bottom = 646.0
-texture = ExtResource("1_5vw27")
+texture = ExtResource("1_getpj")
+expand_mode = 1
 
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(589, 234)
@@ -66,7 +65,7 @@ offset_right = -44.0
 offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
 theme_override_fonts/font = SubResource("FontVariation_cegan")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -77,10 +76,10 @@ anchor_left = 1.0500001
 anchor_top = 3.325
 anchor_right = 1.0500001
 anchor_bottom = 3.325
-offset_left = -53.0
-offset_top = -44.0
-offset_right = 328.0
-offset_bottom = 342.0
+offset_left = 17.0
+offset_top = -49.0
+offset_right = 398.0
+offset_bottom = 337.0
 scale = Vector2(0.5, 0.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_efxa6")
@@ -93,7 +92,6 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_efxa6"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_efxa6")
-icon = ExtResource("3_kek77")
 script = ExtResource("4_lquwl")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control/machete"]
@@ -106,19 +104,19 @@ stream = ExtResource("6_272bh")
 position = Vector2(191, 275)
 
 [node name="Sprite2D" type="Sprite2D" parent="Hand"]
-position = Vector2(88.12501, 203.03128)
-scale = Vector2(0.42004502, 0.45850003)
-texture = ExtResource("7_5vw27")
+position = Vector2(28.000004, 431)
+scale = Vector2(0.64627975, 0.6264554)
+texture = ExtResource("8_getpj")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lquwl")
 autoplay = true
 
 [node name="red_select" type="Button" parent="."]
-offset_left = 365.0
-offset_top = 427.0
-offset_right = 546.0
-offset_bottom = 610.0
+offset_left = 591.0
+offset_top = 422.0
+offset_right = 772.0
+offset_bottom = 605.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2cqfq")
@@ -131,13 +129,12 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2cqfq"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2cqfq")
-icon = ExtResource("9_ycdy4")
 script = ExtResource("11_82xsv")
 
 [node name="blue_select" type="Button" parent="."]
-offset_left = 561.0
-offset_top = 424.0
-offset_right = 750.0
+offset_left = 734.0
+offset_top = 424.00003
+offset_right = 923.0
 offset_bottom = 602.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yaehf")
@@ -151,14 +148,13 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yaehf"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yaehf")
-icon = ExtResource("10_w48qg")
 script = ExtResource("13_getpj")
 
 [node name="green_select" type="Button" parent="."]
-offset_left = 465.0
-offset_top = 424.0
-offset_right = 655.0
-offset_bottom = 607.0
+offset_left = 307.0
+offset_top = 426.0
+offset_right = 497.0
+offset_bottom = 609.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_074og")
@@ -171,14 +167,13 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_074og"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_074og")
-icon = ExtResource("11_vivmo")
 script = ExtResource("15_ryguw")
 
 [node name="yellow_select" type="Button" parent="."]
-offset_left = 662.0
-offset_top = 426.0
-offset_right = 845.0
-offset_bottom = 619.0
+offset_left = 448.0
+offset_top = 423.0
+offset_right = 631.0
+offset_bottom = 616.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cegan")
@@ -191,14 +186,13 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cegan"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_cegan")
-icon = ExtResource("12_2cqfq")
 script = ExtResource("17_d13ii")
 
 [node name="coinSack" type="Button" parent="."]
-offset_left = 4.0
-offset_top = 329.0
-offset_right = 232.0
-offset_bottom = 548.0
+offset_left = 933.0
+offset_top = 150.0
+offset_right = 1161.0
+offset_bottom = 369.0
 scale = Vector2(0.5, 0.5)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_disabled_color = Color(0.099985994, 0.099985994, 0.099985994, 0.4)
@@ -213,15 +207,14 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_dg77c"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dg77c")
-icon = ExtResource("9_4c57u")
 
 [node name="HiddenCoin" type="Sprite2D" parent="."]
-position = Vector2(247, 202)
+position = Vector2(119, 217)
 scale = Vector2(0.3, 0.3)
 script = ExtResource("16_074og")
 
 [node name="cloth" type="Sprite2D" parent="."]
-position = Vector2(265.10513, 214.60771)
+position = Vector2(143.00002, 240.00003)
 rotation = 0.4171337
 scale = Vector2(1.8931669, 1.7117524)
 texture = ExtResource("15_yaehf")
@@ -232,3 +225,5 @@ offset_left = 503.0
 offset_top = 257.0
 offset_right = 594.0
 offset_bottom = 315.0
+theme_override_fonts/font = SubResource("FontVariation_getpj")
+theme_override_font_sizes/font_size = 30
