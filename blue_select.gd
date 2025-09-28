@@ -31,6 +31,6 @@ func _button_pressed() -> void:
 	tween.tween_property(cloth, "modulate:a", 1.0, 1.0).set_delay(1.5)
 	sprite.pick_random_number()
 	disabled = false
+	$"../yellow_select".disabled = false
 	$"../red_select".disabled = false
-	$"../blue_select".disabled = false
 	$"../green_select".disabled = false
