@@ -14,7 +14,6 @@ var numbers = [1,1,1,1,1,
 
 func _ready():
 	randomize()
-	pick_random_number()
 
 func pick_random_number():
 	if numbers.size() == 0:
