@@ -46,3 +46,4 @@ func _button_pressed():
 	var timer = get_tree().create_timer(3.0)
 	await timer.timeout
 	popup_label.visible = false
+	get_tree().change_scene_to_file("res://gameover.tscn")
