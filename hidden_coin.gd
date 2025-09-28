@@ -27,3 +27,4 @@ func pick_random_number():
 
 	# since this script is ON a Sprite2D, just use `texture`
 	set_texture(textures[value])
+	print(value)

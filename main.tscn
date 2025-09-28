@@ -209,12 +209,12 @@ theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dg77c")
 
 [node name="HiddenCoin" type="Sprite2D" parent="."]
-position = Vector2(119, 217)
+position = Vector2(223, 288)
 scale = Vector2(0.3, 0.3)
 script = ExtResource("16_074og")
 
 [node name="cloth" type="Sprite2D" parent="."]
-position = Vector2(143.00002, 240.00003)
+position = Vector2(142, 216.99997)
 rotation = 0.4171337
 scale = Vector2(1.8931669, 1.7117524)
 texture = ExtResource("15_yaehf")
