@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=25 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://dhx3283muypvp" path="res://new_bg.png" id="1_5vw27"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
+[ext_resource type="FontFile" uid="uid://bmknn1doccn3k" path="res://Ricebox Allcaps.ttf" id="3_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://crt1dvnupxyst" path="res://knife.png" id="3_kek77"]
 [ext_resource type="Script" uid="uid://chq7epkwhy0jq" path="res://popUp.gd" id="4_lquwl"]
 [ext_resource type="AudioStream" uid="uid://3nwfosqbtkbm" path="res://knife-stab-48222.mp3" id="5_7mycd"]
@@ -13,6 +14,11 @@
 [ext_resource type="Texture2D" uid="uid://cfuq3vsuum5rc" path="res://blue_coin_better.png" id="10_w48qg"]
 [ext_resource type="Texture2D" uid="uid://gb41fsiyo6cb" path="res://green_coin_better.png" id="11_vivmo"]
 [ext_resource type="Texture2D" uid="uid://b5gxl68q5up6c" path="res://yellow_coin_better.png" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
+[ext_resource type="Script" uid="uid://guvljl36uocm" path="res://hidden_coin.gd" id="16_074og"]
+
+[sub_resource type="FontVariation" id="FontVariation_cegan"]
+base_font = ExtResource("3_2cqfq")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efxa6"]
 
@@ -55,6 +61,7 @@ offset_top = -18.0
 offset_right = -44.0
 offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
+theme_override_fonts/font = SubResource("FontVariation_cegan")
 theme_override_font_sizes/font_size = 46
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -140,3 +147,13 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_disabled_color = Color(0.099985994, 0.099985994, 0.099985994, 0.4)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_dg77c")
 icon = ExtResource("9_4c57u")
+
+[node name="cloth" type="Sprite2D" parent="."]
+position = Vector2(265.10513, 214.60771)
+rotation = 0.4171337
+scale = Vector2(1.8931669, 1.7117524)
+texture = ExtResource("15_yaehf")
+
+[node name="HiddenCoin" type="Sprite2D" parent="."]
+position = Vector2(247, 202)
+script = ExtResource("16_074og")
