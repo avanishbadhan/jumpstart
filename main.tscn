@@ -55,9 +55,9 @@ offset_bottom = 298.0
 [node name="Not_Green" type="Label" parent="Control"]
 visible = false
 layout_mode = 0
-offset_left = -363.0
+offset_left = -376.0
 offset_top = -18.0
-offset_right = -44.0
+offset_right = 54.0
 offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
 theme_override_fonts/font = SubResource("FontVariation_cegan")
@@ -72,10 +72,11 @@ anchor_left = 1.0500001
 anchor_top = 3.325
 anchor_right = 1.0500001
 anchor_bottom = 3.325
-offset_left = 104.0
-offset_top = -39.0
-offset_right = 485.0
-offset_bottom = 347.0
+offset_left = 86.94568
+offset_top = 3.3547974
+offset_right = 188.77087
+offset_bottom = 444.09174
+rotation = -0.68207675
 scale = Vector2(0.5, 0.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_efxa6")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_efxa6")
@@ -104,10 +105,10 @@ position = Vector2(35, 392)
 scale = Vector2(0.64627975, 0.6264554)
 
 [node name="red_select" type="Button" parent="."]
-offset_left = 638.0
-offset_top = 467.0
-offset_right = 819.0
-offset_bottom = 650.0
+offset_left = 637.0
+offset_top = 453.0
+offset_right = 818.0
+offset_bottom = 636.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqfq")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2cqfq")
@@ -123,10 +124,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_2cqfq")
 script = ExtResource("11_82xsv")
 
 [node name="blue_select" type="Button" parent="."]
-offset_left = 801.0
-offset_top = 467.00003
-offset_right = 990.0
-offset_bottom = 645.0
+offset_left = 793.00006
+offset_top = 457.00003
+offset_right = 982.00006
+offset_bottom = 635.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yaehf")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yaehf")
@@ -142,10 +143,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_yaehf")
 script = ExtResource("13_getpj")
 
 [node name="green_select" type="Button" parent="."]
-offset_left = 333.0
-offset_top = 447.0
-offset_right = 523.0
-offset_bottom = 630.0
+offset_left = 332.0
+offset_top = 454.00003
+offset_right = 522.0
+offset_bottom = 637.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_074og")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_074og")
@@ -162,9 +163,9 @@ script = ExtResource("15_ryguw")
 
 [node name="yellow_select" type="Button" parent="."]
 offset_left = 483.0
-offset_top = 447.00003
+offset_top = 453.0
 offset_right = 666.0
-offset_bottom = 640.0
+offset_bottom = 646.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cegan")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cegan")
@@ -180,10 +181,10 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_cegan")
 script = ExtResource("17_d13ii")
 
 [node name="coinSack" type="Button" parent="."]
-offset_left = 933.0
-offset_top = 150.0
-offset_right = 1161.0
-offset_bottom = 369.0
+offset_left = 1013.0
+offset_top = 168.0
+offset_right = 1211.0
+offset_bottom = 357.0
 scale = Vector2(0.5, 0.5)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_disabled_color = Color(0.099985994, 0.099985994, 0.099985994, 0.4)
@@ -200,7 +201,7 @@ theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dg77c")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dg77c")
 
 [node name="HiddenCoin" type="Sprite2D" parent="."]
-position = Vector2(119, 217)
+position = Vector2(124, 232)
 scale = Vector2(0.3, 0.3)
 script = ExtResource("16_074og")
 
@@ -211,11 +212,11 @@ scale = Vector2(1.8931669, 1.7117524)
 texture = ExtResource("15_yaehf")
 
 [node name="coin_guess" type="Label" parent="."]
-visible = false
-offset_left = 503.0
-offset_top = 257.0
-offset_right = 594.0
-offset_bottom = 315.0
+anchors_preset = -1
+offset_left = 379.0
+offset_top = 229.0
+offset_right = 793.0
+offset_bottom = 380.0
 theme_override_fonts/font = SubResource("FontVariation_getpj")
 theme_override_font_sizes/font_size = 30
 
