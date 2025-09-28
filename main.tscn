@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dtuqbrulfuv2l"]
+[gd_scene load_steps=26 format=3 uid="uid://dtuqbrulfuv2l"]
 
 [ext_resource type="Texture2D" uid="uid://dhx3283muypvp" path="res://new_bg.png" id="1_5vw27"]
 [ext_resource type="Script" uid="uid://oa6oklbl8m10" path="res://player.gd" id="1_h2yge"]
@@ -22,7 +22,7 @@ base_font = ExtResource("3_2cqfq")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efxa6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycdy4"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cqfq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yaehf"]
 
@@ -33,6 +33,8 @@ base_font = ExtResource("3_2cqfq")
 [sub_resource type="ButtonGroup" id="ButtonGroup_82xsv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg77c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82xsv"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -63,6 +65,7 @@ offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
 theme_override_fonts/font = SubResource("FontVariation_cegan")
 theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="machete" type="Button" parent="Control"]
@@ -78,6 +81,16 @@ offset_right = 328.0
 offset_bottom = 342.0
 scale = Vector2(0.5, 0.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_efxa6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_efxa6")
 icon = ExtResource("3_kek77")
 script = ExtResource("4_lquwl")
 
@@ -105,7 +118,17 @@ offset_top = 427.0
 offset_right = 546.0
 offset_bottom = 610.0
 scale = Vector2(0.45, 0.45)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ycdy4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2cqfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2cqfq")
 icon = ExtResource("9_ycdy4")
 
 [node name="blue_select" type="Button" parent="."]
@@ -115,6 +138,16 @@ offset_right = 750.0
 offset_bottom = 602.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yaehf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yaehf")
 icon = ExtResource("10_w48qg")
 
 [node name="green_select" type="Button" parent="."]
@@ -124,6 +157,16 @@ offset_right = 655.0
 offset_bottom = 607.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_074og")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_074og")
 icon = ExtResource("11_vivmo")
 
 [node name="yellow_select" type="Button" parent="."]
@@ -133,6 +176,16 @@ offset_right = 845.0
 offset_bottom = 619.0
 scale = Vector2(0.45, 0.45)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_cegan")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cegan")
 button_group = SubResource("ButtonGroup_82xsv")
 icon = ExtResource("12_2cqfq")
 
@@ -145,6 +198,16 @@ scale = Vector2(0.5, 0.5)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_disabled_color = Color(0.099985994, 0.099985994, 0.099985994, 0.4)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_82xsv")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dg77c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dg77c")
 icon = ExtResource("9_4c57u")
 
 [node name="cloth" type="Sprite2D" parent="."]
