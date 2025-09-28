@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://gb41fsiyo6cb" path="res://green_coin_better.png" id="11_vivmo"]
 [ext_resource type="Texture2D" uid="uid://b5gxl68q5up6c" path="res://yellow_coin_better.png" id="12_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://058jq1c21eau" path="res://cloth.png" id="15_yaehf"]
-[ext_resource type="Script" uid="uid://guvljl36uocm" path="res://hidden_coin.gd" id="16_074og"]
+[ext_resource type="Script" path="res://hidden_coin.gd" id="16_074og"]
 
 [sub_resource type="FontVariation" id="FontVariation_cegan"]
 base_font = ExtResource("3_2cqfq")
@@ -62,8 +62,7 @@ offset_right = -44.0
 offset_bottom = 125.0
 theme_override_colors/font_color = Color(0.18959081, 0.096351765, 0.013852307, 1)
 theme_override_fonts/font = SubResource("FontVariation_cegan")
-theme_override_font_sizes/font_size = 46
-horizontal_alignment = 1
+theme_override_font_sizes/font_size = 20
 autowrap_mode = 3
 
 [node name="machete" type="Button" parent="Control"]
