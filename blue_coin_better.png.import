@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bncvdxog3qmt4"
-path="res://.godot/imported/goldCoin (1)-Picsart-BackgroundRemover.png-007360f9ab337f44f0660fbaf3dfb2aa.ctex"
+uid="uid://cfuq3vsuum5rc"
+path="res://.godot/imported/blue_coin_better.png-7f42f6824272ae1a823bde2695f10e1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://goldCoin (1)-Picsart-BackgroundRemover.png"
-dest_files=["res://.godot/imported/goldCoin (1)-Picsart-BackgroundRemover.png-007360f9ab337f44f0660fbaf3dfb2aa.ctex"]
+source_file="res://blue_coin_better.png"
+dest_files=["res://.godot/imported/blue_coin_better.png-7f42f6824272ae1a823bde2695f10e1a.ctex"]
 
 [params]
 

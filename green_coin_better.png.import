@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ebuu6aaswmhd"
-path="res://.godot/imported/redCoin-removebg-preview.png-9b379d25da41a4fb65d947df8da5e523.ctex"
+uid="uid://gb41fsiyo6cb"
+path="res://.godot/imported/green_coin_better.png-56502cda0da1e039fcc04277e1bc5a86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://redCoin-removebg-preview.png"
-dest_files=["res://.godot/imported/redCoin-removebg-preview.png-9b379d25da41a4fb65d947df8da5e523.ctex"]
+source_file="res://green_coin_better.png"
+dest_files=["res://.godot/imported/green_coin_better.png-56502cda0da1e039fcc04277e1bc5a86.ctex"]
 
 [params]
 
