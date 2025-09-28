@@ -1,5 +1,7 @@
 extends Sprite2D
 
+@export var number = 0
+
 var textures = {
 	1: preload("res://blue_coin_better.png"),
 	2: preload("res://green_coin_better.png"),
@@ -14,6 +16,7 @@ var numbers = [1,1,1,1,1,
 
 func _ready():
 	randomize()
+	pick_random_number()
 
 func pick_random_number():
 	if numbers.size() == 0:
@@ -26,4 +29,5 @@ func pick_random_number():
 
 	# since this script is ON a Sprite2D, just use `texture`
 	set_texture(textures[value])
+	number = value
 	print(value)

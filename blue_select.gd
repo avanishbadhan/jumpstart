@@ -5,13 +5,14 @@ extends Button
 @onready var guess: Label = get_node("../coin_guess") 
 var blue_texture = preload("res://blue_coin_better.png")
  
-
+var num = 1
 func _ready() -> void:
 	self.pressed.connect(_button_pressed)
 
 func _button_pressed() -> void:
 	guess.modulate = Color(0, 0, 0)
-	if sprite.texture == blue_texture:
+	print(sprite.number, " ", num, " ", sprite.number == num)
+	if sprite.number == num:
 		guess.text = "Correct!"
 	else:
 		$"..".wrongCounter+=1
@@ -29,6 +30,7 @@ func _button_pressed() -> void:
 	var tween = create_tween()
 	tween.tween_property(cloth, "modulate:a", 0.0, 1.0)
 	tween.tween_property(cloth, "modulate:a", 1.0, 1.0).set_delay(1.5)
+	await tween.finished
 	sprite.pick_random_number()
 	disabled = false
 	$"../yellow_select".disabled = false

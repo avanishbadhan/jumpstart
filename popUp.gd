@@ -27,7 +27,7 @@ func _button_pressed():
 		popup_label.text = "Not red. But you’ll still bleed."
 	elif(hiddenCoin.texture != green_tTure):
 		popup_label.text = "Green’s for life. You’re closer to death."
-	if(hiddenCoin.texture != blue_tTure):
+	else:
 		popup_label.text = "No sunlight here. It isn’t yellow."
 	
 	var randomb = randi()%8
